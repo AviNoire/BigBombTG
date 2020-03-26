@@ -10,10 +10,10 @@ print(color("""
 time.sleep(0.5)
 while True:
 	time.sleep(0.1)
-	print(f"""
-{Fore.CYAN}[1] How to use?
-{Fore.CYAN}[2] Authors
-{Fore.RED}[3] Exit""")
+	print(color("""
+[1] How to use?
+[2] Authors
+[3] Exit""","cyan"))
 	anv = input(f"""{Fore.RED}$ {Fore.CYAN}""")
 	if anv == "2":
 		time.sleep(0.7)
